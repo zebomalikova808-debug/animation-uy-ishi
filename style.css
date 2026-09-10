@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    background-color: red;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes box {
+    0%, 100% {
+        background-color: aquamarine;
+        transform: translate(-500px, -250px);
+    }
+
+    25% {
+        background-color: rgb(255, 109, 109);
+        transform: translate(500px, -250px); 
+    }
+
+    50% {
+        background-color: black;
+        transform: translate(500px, 250px); 
+    }
+
+    75% {
+        background-color: rgb(217, 139, 37);
+        transform: translate(-500px, 250px); 
+    }
+}
